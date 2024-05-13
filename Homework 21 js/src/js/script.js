@@ -73,3 +73,15 @@ let word = "apple, strawbery";
 console.log("Long word:", longWord(word));
 
 //-----------------------------------------------------------------
+
+//task 5 ------------------------------------------------------------
+
+function calculation(num1){
+    let res = 0;
+    while(num1 !==0){
+        res += num1 % 10;
+        num1 = (num1 - (num1%10))/10;
+    }
+    return res;
+}
+console.log(calculation(234));
